@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    position: absolute;
+    color: #fff;
+    margin: 110px 100px;
+    z-index: 3;
+    font-size: 60px;
+}
+
+.oka {
+    width: 300px;
+    height: 300px;
+    margin: 30px auto;
+    box-shadow: 0px 0px 30px #1e90ff;
+    display: flex;
+    overflow: hidden;
+}
+
+.oka1 {
+    width: 50%;
+    height: 100%;
+    background-color: #1e90ff;
+    transform-origin: top left;
+    transform: translateX(300px);
+    transition: 1s;
+}
+
+.oka2 {
+    width: 50%;
+    height: 100%;
+    background-color: #1e90ff;
+    transform: translateX(-300px);
+    transition: 1s;
+}
+
+.oka:hover .oka1 {
+    transform: rotate(0);
+}
+.oka:hover .oka2 {
+    transform: rotate(0);
+}
